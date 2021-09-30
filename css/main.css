@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'oswald', sans-serif;
+    font-family: 'roboto', sans-serif;
+}
+
+/* inicio header */
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+
+/* logo */
+
+.img-logo img {
+    display: flex;
+    justify-content: center;
+    height: 20vh;    
+}
+/* fin logo */
+
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+/* fin animation */
+
+header div {
+    display: flex;
+    justify-content: center;
+}
+
+/* nav ul {
+    display: flex;
+    flex-flow: column wrap;
+} */
+
+.items-nav {
+    align-items: center;
+    border: solid 1px;
+}
+
+
+li {
+    list-style-type: none;
+    margin: 5px;
+    transition: all 1.5s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+
+/* nav {
+    font-family: 'oswald' sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+
+    list-style-type: none;
+} */
+
+/* fin header */
+
+
+#about {
+    background: linear-gradient(90deg, rgba(30,126,0,1) 0%, rgba(29,253,59,1) 50%, rgba(167,219,60,1) 100%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#todos-los-productos div{
+    justify-items: center;
+}
+
+
+h1 {
+    font-family: 'oswald' sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+    transform: skew(15deg);
+}
+
+h2 {
+    font-family: 'oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p { 
+    font-family: 'roboto' sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* inicio footer */
+
+
+#ul-footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#ul-footer-redes {
+    font-family: 'oswald' sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    transform: translate(-30px);
+}
+
+.styles-div-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* media queries */
+@media only screen and (min-width:768px) {
+    #todos-los-productos {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: 
+            "mates termos"
+            "bombillas accesorios"
+            "yerbas none";
+
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .producto1 {
+        grid-area: mates;
+        margin: 10px;
+    }
+
+    .producto2 {
+        grid-area: termos;
+        margin: 10px;
+    }
+    .producto3 {
+        grid-area: bombillas;
+        margin: 10px;
+    }
+    .producto4 {
+        grid-area: accesorios;
+        margin: 10px;
+    }
+    .producto5 {
+        grid-area: yerbas;
+        margin: 10px;
+    }
+    .producto6 {
+        grid-area: torpedo;
+        margin: 10px;
+    }
+    .producto7 {
+        grid-area: cincelado;
+        margin: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+
+    #section-grid {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+        "camionero-p torpedo-p"
+        "acero imperial"
+        "camionero torpedo"
+        "cincelado cincelado"
+        ;
+    justify-items: center;
+    align-items: center;
+    }
+
+    #camionero-p {
+        grid-area: camionero-p;
+        margin: 10px;
+    }
+
+    #torpedo-p {
+        grid-area: torpedo-p;
+        margin: 10px;
+    }
+    #acero {
+        grid-area: acero;
+        margin: 10px;
+    }
+    #imperial {
+        grid-area: imperial;
+        margin: 10px;
+    }
+    #camionero {
+        grid-area: camionero;
+        margin: 10px;
+    }
+
+    #cincelado {
+        grid-area: cincelado;
+        margin: 10px;
+    }
+
+    .img-logo img {
+        display: flex;
+        justify-content: center;
+        height: 25vh;    
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #ul-footer-nav {
+        display: none;
+    }
+    #hr-main {
+        display:none;
+    }
+    .nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .img-logo img {
+        display: flex;
+        justify-content: center;
+        height: 30vh;    
+    }
+
+}
+/* fin media queries */
