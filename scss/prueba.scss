@@ -9,7 +9,36 @@ nav {
     flex-flow: column wrap;
     }
 }
+.bg-light {
+    background-color: #97ae4c !important;
+}
+
+.titulos-principales-pages {
+    background-color: #a3b861
+}
+
+
+// imagen de fondo del main
+main{
+    background-image: url(../multimedia/img/fondobody-abajoizq.jpg);
+    background-size: cover;
+    background-position: bottom 5px left 5px;
+}
+
+// color de las etiquetas a
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.titulo-de-productos-del-index {
+    text-decoration: dotted;
+}
+.color-parrafos-carrousel {
+    color: rgb(73, 73, 73);
+}
 
 @import "main";
 @import "footer";
 @import "mates";
+@import "mediaqueries";
