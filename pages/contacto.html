@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
             <button class="navbar-toggler"      type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,28 +24,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2  my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 100px;">
-                   
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li>
-                                <a      class="dropdown-item" href="accesorios.html">Accesorios</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="mates.html">Mates</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="termos.html">Termos</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="bombillas.html">Bombillas</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="yerbas.html">Yerbas</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html#todos-los-productos">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
@@ -57,13 +37,10 @@
                         <a class="nav-link" href="tips.html">Tips</a>
                     </li> 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
+    
     <!-- inicio header -->
     <header id="header">
         <div class="img-logo">
@@ -71,22 +48,29 @@
             <img src="../multimedia/img/santo mate logo face.jpg" alt="">
         </div>
     
-    </header>
+    </header>  
+    
         
         <!-- inicio main -->
         <main>
             <section>
                 <div>
-                    <h2>Contacto</h2>
+                    <hr>
+                    <h2 class="titulos-principales-pages">Contactanos</h2>
+                    <hr>
                 </div>
                 <!-- planilla de contacto -->
 
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 
@@ -100,15 +84,16 @@
                 <ul id="ul-footer-nav">
                     <li><a class="nav-footer" href="../index.html">Inicio</a></li>
                     <li><a class="nav-footer" href="../index.html">Productos</a></li>
-                    <li><a class="nav-footer" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a class="nav-footer" href="pages/contacto.html">Contacto</a></li>
-                    <li><a class="nav-footer" href="pages/tips.html">Tips</a></li>   
+                    <li><a class="nav-footer" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a class="nav-footer" href="../pages/contacto.html">Contacto</a></li>
+                    <li><a class="nav-footer" href="../pages/tips.html">Tips</a></li>   
                 </ul>
             </nav>
     
             <hr>
 
-    
+            <h3 style="text-align: center;">Nuestras Redes</h3>
+            
             <ul id="ul-footer-redes">
                 <li><a href="https://www.instagram.com/santomate.sn/">Instagram</a></li>
                 <li><a href="https://www.facebook.com/Santo-Mate-Sn-108794698076105">Facebook</a></li>

@@ -20,7 +20,7 @@ header {
 .img-logo img {
     display: flex;
     justify-content: center;
-    height: 20vh;    
+    height: 15vh;    
 }
 /* fin logo */
 
@@ -41,10 +41,6 @@ header div {
     justify-content: center;
 }
 
-/* nav ul {
-    display: flex;
-    flex-flow: column wrap;
-} */
 
 .items-nav {
     align-items: center;
@@ -92,8 +88,6 @@ h1 {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-
-    transform: skew(15deg);
 }
 
 h2 {
@@ -139,125 +133,3 @@ p {
     flex-direction: column;
     align-items: center;
 }
-
-
-/* media queries */
-@media only screen and (min-width:768px) {
-    #todos-los-productos {
-        display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        grid-gap: 10px;
-        grid-template-areas: 
-            "mates termos"
-            "bombillas accesorios"
-            "yerbas none";
-
-        justify-items: center;
-        align-items: center;
-    }
-    
-    .producto1 {
-        grid-area: mates;
-        margin: 10px;
-    }
-
-    .producto2 {
-        grid-area: termos;
-        margin: 10px;
-    }
-    .producto3 {
-        grid-area: bombillas;
-        margin: 10px;
-    }
-    .producto4 {
-        grid-area: accesorios;
-        margin: 10px;
-    }
-    .producto5 {
-        grid-area: yerbas;
-        margin: 10px;
-    }
-    .producto6 {
-        grid-area: torpedo;
-        margin: 10px;
-    }
-    .producto7 {
-        grid-area: cincelado;
-        margin: 10px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-
-    #section-grid {
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (4, 1fr);
-    grid-gap: 10px;
-    grid-template-areas:
-        "camionero-p torpedo-p"
-        "acero imperial"
-        "camionero torpedo"
-        "cincelado cincelado"
-        ;
-    justify-items: center;
-    align-items: center;
-    }
-
-    #camionero-p {
-        grid-area: camionero-p;
-        margin: 10px;
-    }
-
-    #torpedo-p {
-        grid-area: torpedo-p;
-        margin: 10px;
-    }
-    #acero {
-        grid-area: acero;
-        margin: 10px;
-    }
-    #imperial {
-        grid-area: imperial;
-        margin: 10px;
-    }
-    #camionero {
-        grid-area: camionero;
-        margin: 10px;
-    }
-
-    #cincelado {
-        grid-area: cincelado;
-        margin: 10px;
-    }
-
-    .img-logo img {
-        display: flex;
-        justify-content: center;
-        height: 25vh;    
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    #ul-footer-nav {
-        display: none;
-    }
-    #hr-main {
-        display:none;
-    }
-    .nav ul {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .img-logo img {
-        display: flex;
-        justify-content: center;
-        height: 30vh;    
-    }
-
-}
-/* fin media queries */

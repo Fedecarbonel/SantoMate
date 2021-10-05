@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
             <button class="navbar-toggler"      type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,28 +24,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2  my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 100px;">
-                   
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li>
-                                <a      class="dropdown-item" href="accesorios.html">Accesorios</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="mates.html">Mates</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="termos.html">Termos</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="bombillas.html">Bombillas</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="yerbas.html">Yerbas</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html#todos-los-productos">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
@@ -57,10 +37,6 @@
                         <a class="nav-link" href="tips.html">Tips</a>
                     </li> 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -78,52 +54,55 @@
     <!-- inicio main -->
     <main>
         <section>
-            <h1>Termos</h1>
+            <hr>
+            <h1 class="titulos-principales-pages">Nuestros Termos</h1>
+            <hr>
+            <img id="foto-pages" src="../multimedia/img/IMG_7371.png" alt="">
             <!-- foto de fondo -->
         </section>
 
-        <section>
-            <div>
-                <div>
-                    <img src="" alt="">
+        <section id="section-grid">
+            <div id="articulo1">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/termomediamanija.png" alt="termo media manija 1lt">
                 </div>
 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Termo Media Manija 1lt</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde ab soluta nobis nihil numquam.</p>
+                    <p>Pico cebador, media manija, acero inoxidable bicapa, mantiene hasta 12 horas las temperaturas. </p>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="articulo2">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/termoinova.png" alt="Termo inova 1lt">
                 </div>
                 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Termo Inova 1lt</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium corrupti, quos nostrum earum iure aspernatur.</p>
+                    <p>Tapon cebador, doble pared de aislamiento, manija facil transporte, mantiene frio y calor 24hs.</p>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="articulo3">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/termocontigo1lt.png" alt="termo contigo 1.1lt">
                 </div>
                 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Termo Contigo 1.1lt</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam repudiandae quas modi velit ea esse!</p>
+                    <p>Boquilla 360°, acero inoxidable de doble capa aislado al vacio, valvula de medio giro facil de abrir, mantiene 35 horas caliente, 60 horas frio</p>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="articulo4">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/termos.png" alt="termo contigo 743ml">
                 </div>
                 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Termo Contigo 743ml</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vero dolores libero distinctio error explicabo.</p>
+                    <p>Boquilla 360°, acero inoxidable de doble capa aislado al vacio, valvula de medio giro facil de abrir, mantiene 30 horas caliente, 45 horas frio</p>
                 </div>
             </div>
            
@@ -138,13 +117,14 @@
             <ul id="ul-footer-nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../index.html">Productos</a></li>
-                <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto<a></li>
-                <li><a href="tips.html">Tips</a></li>  
+                <li><a href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="../pages/contacto.html">Contacto<a></li>
+                <li><a href="../pages/tips.html">Tips</a></li>  
             </ul>
         </nav>
 
         <hr>
+        <h3 style="text-align: center;">Nuestras Redes</h3>
 
         <ul id="ul-footer-redes">
             <li><a href="https://www.instagram.com/santomate.sn/">Instagram</a></li>

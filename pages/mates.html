@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
             <button class="navbar-toggler"      type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,28 +24,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2  my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 100px;">
-                   
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li>
-                                <a      class="dropdown-item" href="accesorios.html">Accesorios</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="mates.html">Mates</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="termos.html">Termos</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="bombillas.html">Bombillas</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="yerbas.html">Yerbas</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html#todos-los-productos">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
@@ -57,14 +37,9 @@
                         <a class="nav-link" href="tips.html">Tips</a>
                     </li> 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
-    
     <!-- inicio header -->
     <header id="header">
         <div class="img-logo">
@@ -80,12 +55,14 @@
     <!-- inicio main -->
     <main>
         <section>
-            <h1>Mates</h1>
-            <img id="foto-pages" src="../multimedia/img/IMG_7365.png" alt="">
+            <hr>
+            <h1 class="titulos-principales-pages">Nuestros Santos Mates</h1>
+            <hr>
+            <img id="foto-pages" src="../multimedia/img/fondomates.png" alt="">
             </section>
 
         <section id="section-grid">
-            <div id="camionero-p">
+            <div id="articulo1">
                 <div class="styles-div-productos">
                     <img class="animacion-mates" src="../multimedia/img/mate-camionero.png" alt="">
                 </div>
@@ -96,7 +73,7 @@
                 </div>
             </div>
             
-            <div id="torpedo-p">
+            <div id="articulo2">
                 <div class="styles-div-productos">
                     <img class="animacion-mates" src="../multimedia/img/mate-torpedo-p.png" alt="">
                 </div>
@@ -107,7 +84,7 @@
                 </div>
             </div>
             
-            <div id="acero">
+            <div id="articulo3">
                 <div class="styles-div-productos">
                     <img class="animacion-mates" src="../multimedia/img/mate-acero.png" alt="">
                 </div>
@@ -118,7 +95,7 @@
                 </div>
             </div>
             
-            <div id="imperial">
+            <div id="articulo4">
                 <div class="styles-div-productos">
                     <img class="animacion-mates" src="../multimedia/img/mate-imperial.png" alt="">
                 </div>
@@ -129,7 +106,7 @@
                 </div>
             </div>
             
-            <div id="camionero">
+            <div id="articulo5">
                 <div class="styles-div-productos">
                     <img class="animacion-mates" src="../multimedia/img/camionero-eco.png" alt="camionero">
                 </div>
@@ -140,7 +117,7 @@
                 </div>
             </div>
             
-            <div id="torpedo">
+            <div id="articulo6">
                 <div class="styles-div-productos">
                     <img class="animacion-mates" src="../multimedia/img/torpedo-eco.png" alt="torpedo">
                 </div>
@@ -151,7 +128,7 @@
                 </div>
             </div>
             
-            <div id="cincelado">
+            <div id="articulo7">
                 <div class="styles-div-productos">
                     <img class="animacion-mates" src="../multimedia/img/torpedo-cincelado.png" alt="mate cincelado">
                 </div>
@@ -171,14 +148,15 @@
             <ul id="ul-footer-nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../index.html">Productos</a></li>
-                <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto<a></li>
-                <li><a href="tips.html">Tips</a></li>  
+                <li><a href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="../pages/contacto.html">Contacto<a></li>
+                <li><a href="../pages/tips.html">Tips</a></li>  
             </ul>
         </nav>
         
 
         <hr>
+        <h3 style="text-align: center;">Nuestras Redes</h3>
 
         <ul id="ul-footer-redes">
             <li><a href="https://www.instagram.com/santomate.sn/">Instagram</a></li>

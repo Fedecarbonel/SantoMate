@@ -1,0 +1,130 @@
+/* media queries */
+@media only screen and (min-width:768px) {
+    // inicio grid de productos del index
+    #todos-los-productos {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: 
+            "mates termos"
+            "bombillas accesorios"
+            "yerbas none";
+
+        justify-items: center;
+        align-items: center;
+    }
+
+    .producto1 {
+        grid-area: mates;
+        margin: 10px;
+    }        
+    .producto2 {
+        grid-area: termos;
+        margin: 10px;
+    }        
+    .producto3 {
+        grid-area: bombillas;
+        margin: 10px;
+    }        
+    .producto4 {
+        grid-area: accesorios;
+        margin: 10px;
+    }
+    .producto5 {
+        grid-area: yerbas;
+        margin: 10px;
+    }
+    .producto6 {
+        grid-area: torpedo;
+        margin: 10px;
+    }
+    .producto7 {
+        grid-area: cincelado;
+        margin: 10px;
+    }
+//    fin grid de productos del index
+
+    // logo
+    .img-logo img {
+        display: flex;
+        justify-content: center;
+        height: 25vh;    
+    }
+    // fin logo
+    
+
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+
+    // inicio grid de productos de las pages
+    #section-grid {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (4, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+            "articulo1 articulo2"
+            "articulo3 articulo4"
+            "articulo5 articulo6"
+            "articulo7 articulo7"
+            ;
+        justify-items: center;
+        align-items: center;
+        }    
+    
+    #articulo1 {
+        grid-area: articulo1;
+        margin: 10px;
+    }
+
+    #articulo2 {
+        grid-area: articulo2;
+        margin: 10px;
+    }
+    #articulo3{
+        grid-area: articulo3;
+        margin: 10px;
+    }
+    #articulo4{
+        grid-area: articulo4;
+        margin: 10px;
+    }
+    #articulo5 {
+        grid-area: articulo5;
+        margin: 10px;
+    }
+
+    #articulo6 {
+        grid-area: articulo6;
+        margin: 10px;
+    }
+    #articulo7 {
+        grid-area: articulo7;
+        margin: 10px;
+    }
+}
+// fin grid de productos de las pages
+
+@media only screen and (min-width: 1024px) {
+    #ul-footer-nav {
+        display: none;
+    }
+    #hr-main {
+        display:none;
+    }
+    .nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .img-logo img {
+        display: flex;
+        justify-content: center;
+        height: 30vh;    
+    }
+
+}
+/* fin media queries */

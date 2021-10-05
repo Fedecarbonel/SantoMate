@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
             <button class="navbar-toggler"      type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,28 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2  my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 100px;">
-                   
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li>
-                                <a      class="dropdown-item" href="accesorios.html">Accesorios</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="mates.html">Mates</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="termos.html">Termos</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="bombillas.html">Bombillas</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="yerbas.html">Yerbas</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html#todos-los-productos">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
@@ -58,10 +38,6 @@
                         <a class="nav-link" href="tips.html">Tips</a>
                     </li> 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -69,7 +45,7 @@
     <header id="header">
         <div class="img-logo">
             <!-- logo -->
-            <img src="../multimedia/img/santo mate logo face.jpg" alt="">
+            <img src="../multimedia/img/santo mate logo face.jpg" alt=" LOGO">
         </div>
 
         
@@ -80,63 +56,75 @@
     <!-- inicio main -->
     <main>
         <section>
-            <h1>Bombillas</h1>
-            <!-- foto de fondo -->
+            <hr>
+            <h1 class="titulos-principales-pages">Bombillas</h1>
+            <hr>
+            <img id="foto-pages" src="../multimedia/img/IMG_7371.png" alt="">
         </section>
 
-        <section>
-            <div>
-                <div>
-                    <img src="" alt="">
+        <section id="section-grid">
+            <div id="articulo1">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/bombillaplana.png" alt="bombilla plana acero inoxidable">
                 </div>
 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Bombillas Planas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde ab soluta nobis nihil numquam.</p>
+                    <p>Acero inoxidable, cortes de lado que hacen de filtro, ideal para mates chicos y de acero.</p>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="articulo2">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/bombillaalpacapicodeloro.png" alt="bombilla de alpaca pico de loro">
                 </div>
                 
-                <div>
-                    <h3>bomillas de Alpaca</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium corrupti, quos nostrum earum iure aspernatur.</p>
+                <div class="styles-div-productos">
+                    <h3>Bombillas de Alpaca</h3>
+                    <p>Pico de loro, baño de alpaca, base de pala, pico ancho, ideal para mates grandes por su altura.</p>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="articulo3">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/bombillaspicodorado.png" alt="bombilla pico dorado de alpaca">
                 </div>
                 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Bombillas de Alpaca Pico Dorado</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam repudiandae quas modi velit ea esse!</p>
+                    <p>Pico de loro baño en color dorado, baño de alpaca, base de pala, pico ancho, ideal para mates grandes por su altura.</p>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="articulo4">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/bombilla-desmontable.png" alt="bombillas desmontable">
                 </div>
                 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Bombillas Desmontable</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vero dolores libero distinctio error explicabo.</p>
+                    <p>Acero inoxidable, excelente para limpiar por dentro, pico de loro, ideal para mates chicos y mediano</p>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="articulo5">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/bombillon.png" alt="bombillon pico de loro">
                 </div>
                 
-                <div>
+                <div class="styles-div-productos">
                     <h3>Bombillon</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate totam vitae libero assumenda, excepturi nobis!</p>
+                    <p>Plata, filtro desmontable, pico de loro, excelente para limpiar por dentro</p>
+                </div>
+            </div>
+            <div id="articulo6">
+                <div class="styles-div-productos">
+                    <img class="img-animacion" src="../multimedia/img/bombillon.png" alt="bombillon pico de loro">
+                </div>
+                
+                <div class="styles-div-productos">
+                    <h3>Bombilla Alpaca Pico de Bronce</h3>
+                    <p>Pico de loro bañado en bronce, baño de alpaca, base de pala, pico ancho, ideal para mates grandes por su altura.</p>
                 </div>
             </div>
          
@@ -149,14 +137,14 @@
             <ul id="ul-footer-nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../index.html">Productos</a></li>
-                <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto<a></li>
-                <li><a href="tips.html">Tips</a></li>  
+                <li><a href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="../pages/contacto.html">Contacto<a></li>
+                <li><a href="../pages/tips.html">Tips</a></li>  
             </ul>
         </nav>
 
         <hr>
-
+        <h3 style="text-align: center;">Nuestras Redes</h3>
         <ul id="ul-footer-redes">
             <li><a href="https://www.instagram.com/santomate.sn/">Instagram</a></li>
             <li><a href="https://www.facebook.com/Santo-Mate-Sn-108794698076105">Facebook</a></li>
